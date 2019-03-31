@@ -1,16 +1,48 @@
 <template>
   <v-app>
     <v-content>
-      <div class="pa-2 app-container">
-        <h1 class="resume-title grey--text text--darken-3">
-          {{ title }}
-        </h1>
-        <h3 class="my-3 headline indigo--text text--darken-1">
-          ✦
-        </h3>
-        <p class="grey--text text--darken-2 presentation-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, optio eius ad quaerat blanditiis veniam asperiores vel amet sed velit. Ab possimus unde reiciendis quisquam vitae reprehenderit aut. Optio, dicta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, consequatur a quia laboriosam vel voluptas illum maxime ut libero quasi expedita! Facere eos aliquam expedita reprehenderit quisquam alias repellat perferendis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Non vel, porro reprehenderit error voluptatibus ab nostrum, molestias soluta quidem cupiditate ipsa reiciendis possimus? Omnis numquam quam, tempore eum quo fugiat?
-        </p>
+      <div class="resume-container blue-grey">
+        <div class="resume-paper elevation-10">
+          <v-layout
+            row
+            wrap
+          >
+            <v-flex
+              xs12
+              lg4
+            >
+              <div class="resume-column grey darken-4 white--text">
+                <div class="info-column-section">
+                  <img
+                    class="portrait mt-5 mb-4 elevation-5"
+                    src="./images/patrik-nilsson.jpg"
+                    alt="Patrik Nilsson portrait"
+                  >
+                  <div class="presentation-titles text-xs-center">
+                    <h1 class="name-title font-weight-thin">
+                      Patrik Nilsson
+                    </h1>
+                    <h2 class="work-title font-weight-light">
+                      Front End Developer
+                    </h2>
+                  </div>
+                </div>
+              </div>
+            </v-flex>
+            <v-flex
+              xs12
+              lg8
+            >
+              <div class="resume-column">
+                <div class="main-section">  
+                  <h2 class="main-section-title">
+                    Profile
+                  </h2>
+                </div>
+              </div>
+            </v-flex>
+          </v-layout>
+        </div>
       </div>
     </v-content>
   </v-app>
@@ -21,25 +53,38 @@ export default {
   name: 'App',
   data() {
     return {
-      title: 'Front End Developer'
+      title: 'Patrik Nilsson',
+      subTitle: 'Front End utvecklare'
     }
   }
 };
 </script>
 
 <style lang="scss">
-  .app-container { 
-    text-align: center;
-    .resume-title { 
-      font-family: 'Lora', serif;
-      font-size: 56px;
+  .resume-container {
+    height: 100%;
+    padding: 15px;
+    @media (min-width: 1264px) {
+      padding: 35px;
     }
-    .presentation-text {
-      max-width: 80%;
-      font-size: 16px;
-      line-height: 35px;
-      margin: auto;
-    }
+  }
+
+  .resume-paper { background-color: white; }
+
+  .info-column-section {
+    padding: 40px;
+    box-sizing: border-box;
+  }
+  .portrait { 
+    display: block;
+    width: 175px;
+    margin: auto;
+    border-radius: 3px;
+  }
+
+  .name-title {
+    font-family: 'Slabo 27px', serif;
+    font-size: 40px;
   }
 </style>
 
