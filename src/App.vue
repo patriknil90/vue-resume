@@ -30,18 +30,17 @@
             >
               <div class="resume-column">
                 <div class="main-section">  
-                  <div class="presentation-titles">
-                    <h1 class="name-title font-weight-thin">
-                      Patrik Nilsson
-                    </h1>
-                    <h2 class="work-title font-weight-light mb-4">
-                      Front End developer
-                    </h2>
-                    <resume-presentation />
-                    <resume-contact-buttons />
-                  </div>
+                  <h1 class="name-title font-weight-thin">
+                    Patrik Nilsson
+                  </h1>
+                  <h2 class="work-title font-weight-light mb-4">
+                    Front End developer
+                  </h2>
+                  <resume-presentation />
+                  <resume-contact-buttons />
                 </div>
                 <resume-skills class="hidden-sm-and-up" />
+                <resume-experience />
               </div>
             </v-flex>
           </v-layout>
@@ -66,7 +65,7 @@ export default {
     }
   }
 
-  .main-section { padding: 10px 30px; }
+  .main-section { padding: 20px 30px; }
 
   .resume-paper { background-color: white; }
 
@@ -84,9 +83,22 @@ export default {
     font-family: 'Slabo 27px', serif;
     font-size: 36px;
     line-height: 1.4;
+    color: #323c56;
     @media (min-width: 680px) {
       font-size: 50px;
     }
+  }
+
+  .section-title {
+    font-size: 28px;
+    font-weight: 400;
+    color: #323c56;
+    line-height: 1.3;
+    margin-bottom: 14px;
+  }
+
+  .period-in-title {
+    display: inline-block;
   }
 
 </style>
