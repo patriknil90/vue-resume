@@ -1,5 +1,7 @@
+const path = require('path');
 const { VueLoaderPlugin } = require('vue-loader');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
     module: {
@@ -46,9 +48,14 @@ module.exports = {
         ]
     },
     plugins: [
+        new CleanWebpackPlugin(),
         new VueLoaderPlugin(),
         new HtmlWebpackPlugin({
           template: './src/index.html'
         })
-    ]
+    ],
+    output: {
+        filename: '[name].[hash].js',
+        path: path.resolve(__dirname, 'dist')
+    }
 };
