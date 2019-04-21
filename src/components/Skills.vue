@@ -1,5 +1,5 @@
 <template>
-  <div class="pa-3">
+  <div class="teal darken-1 pa-3">
     <div
       v-for="category in skills"
       :key="category.categoryName"

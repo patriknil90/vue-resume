@@ -97,6 +97,9 @@ export default {
 
   .period-in-title {
     display: inline-block;
+    @media (max-width: 599px) {
+      display: block;
+    }
   }
 
   .milestone-section {
