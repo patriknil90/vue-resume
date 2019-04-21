@@ -9,7 +9,7 @@ import App from './App.vue'
 import Skills from './components/Skills.vue'
 import Presentation from './components/Presentation.vue'
 import ContactButtons from './components/ContactButtons.vue'
-import ExperienceContainer from './components/experience/ExperienceContainer.vue'
+import ExperienceContainer from './components/ExperienceContainer.vue'
 
 Vue.use(Vuetify)
 
