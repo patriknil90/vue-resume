@@ -101,5 +101,17 @@ export default {
     display: inline-block;
   }
 
+  .milestone-section {
+    margin-bottom: 20px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .section-presentation {
+    line-height: 1.6;
+    color: #616161;
+  }
+
 </style>
 

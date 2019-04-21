@@ -55,7 +55,7 @@ export default {
               value: 75,
             },
             {
-              name: 'angular',
+              name: 'Angular',
               value: 65,
             },
           ]
@@ -83,7 +83,7 @@ export default {
         },
       ],
       uncategorizedSkills: ['Redux', 'Jest', 'Enzyme', 'Axios', 'Jira', 'Confluence', 'Git', 'Gerrit',
-      'Azure Devops', 'Scrum', 'SAFe', 'Test Driven Development', 'CI/CD']
+        'Azure Devops', 'Scrum', 'SAFe', 'Test Driven Development', 'CI/CD']
     }
   }
 }
