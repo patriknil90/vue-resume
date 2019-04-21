@@ -12,6 +12,7 @@
               sm5
               md4
               lg3
+              class="teal darken-1"
             >
               <div class="resume-column">
                 <img

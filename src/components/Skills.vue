@@ -1,5 +1,5 @@
 <template>
-  <div class="pa-3 teal darken-1">
+  <div class="pa-3">
     <div
       v-for="category in skills"
       :key="category.categoryName"
@@ -18,8 +18,8 @@
         <v-progress-linear
           v-model="categorySkill.value"
           class="mt-1 mb-2"
-          color="teal darken-4"
-          background-color="teal darken-3"
+          color="cyan darken-4"
+          background-color="teal lighten-1"
         />
       </div>
     </div>
