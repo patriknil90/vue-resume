@@ -1,5 +1,5 @@
 # vue-resume
-My personal resume, free to use for anyone.
+My personal resume which can be found at <a href="http://patriknilsson.ninja/" target="__blank">PatrikNilsson.Ninja</href>.
 
 1. `git clone https://github.com/patriknil90/vue-resume.git`
 2. `cd vue-resume`
