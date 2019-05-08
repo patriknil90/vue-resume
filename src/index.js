@@ -1,5 +1,6 @@
 import 'babel-polyfill'
 import Vue from 'vue'
+import VueRouter from 'vue-router'
 import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.min.css'
 
@@ -12,7 +13,12 @@ import ContactButtons from './components/ContactButtons.vue'
 import WorkExperience from './components/WorkExperience.vue'
 import Education from './components/Education.vue'
 
+Vue.use(VueRouter)
 Vue.use(Vuetify)
+
+const router = new VueRouter({
+  
+});
 
 Vue.component('resume-skills', Skills)
 Vue.component('resume-presentation', Presentation)
