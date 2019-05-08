@@ -3,7 +3,7 @@
     <v-content>
       <div class="app-container blue-grey">
         <div class="app-paper elevation-10">
-          <resume-container />
+          <router-view />
         </div>
       </div>
     </v-content>
