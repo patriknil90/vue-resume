@@ -12,7 +12,7 @@
     >
       <img
         class="portrait"
-        src="/src/images/patrik-nilsson.jpg"
+        src="../../images/patrik-nilsson.jpg"
         alt="Patrik Nilsson Front End developer"
       >
       <resume-skills class="hidden-xs-only" />
