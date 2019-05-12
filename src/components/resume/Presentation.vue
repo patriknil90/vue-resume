@@ -14,8 +14,8 @@ export default {
     return {
       presentation: {
         sitePurpose: `<span style="font-style: italic;">This site was created during a spare time project as a way for me to familiarize myself a bit 
-          more with Vue.js, WebPack, Babel ans Amazon Web Services.
-          As a bonus, it will also live as my personal digital resume. The source code for this site can be found 
+          more with Vue.js, WebPack, Babel and Amazon Web Services.
+          It will also serve as my personal digital resume. The source code for this site can be found 
           <a href="https://github.com/patriknil90/vue-resume" target="_blank">here</a>.</span>`,
         work: `I'm a structured and result-oriented Front End developer specializing in Single Page applications.
           With an agile approach and focus on problem solving I want to contribute value to end-users and businesses without being locked in to one SPA framework.
