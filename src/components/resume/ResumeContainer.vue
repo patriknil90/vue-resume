@@ -69,8 +69,8 @@ export default {
 <style lang="scss">
   .welcome-section {
     padding: 75px 20px;
+    background-color: #F5F5F5;
     @media (min-width: 680px) {
-      background-color: #F5F5F5;
       -webkit-box-shadow: inset 0px 0px 25px 0px rgba(0,0,0,0.1);
       -moz-box-shadow: inset 0px 0px 25px 0px rgba(0,0,0,0.1);
       box-shadow: inset 0px 0px 25px 0px rgba(0,0,0,0.15);
