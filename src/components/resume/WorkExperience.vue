@@ -1,23 +1,21 @@
 <template>
-  <div class="grey lighten-4">
-    <div class="main-section">
-      <h2 class="section-title">
-        Work experience
-      </h2>
-      <div
-        v-for="experience in experiences"
-        :key="experience.workTitle+experience.employer"
-        class="milestone-section" 
-      >
-        <h3 class="section-subtitle mb-1">
-          <span class="mr-2">{{ experience.workTitle }} @ {{ experience.employer }}</span>
-          <span class="period-in-title font-weight-light">{{ experience.from }} - {{ experience.to }}</span>
-        </h3>
-        <p
-          class="section-presentation"
-          v-html="experience.presentation"
-        />
-      </div>
+  <div class="main-section">
+    <h2 class="section-title">
+      Work experience
+    </h2>
+    <div
+      v-for="experience in experiences"
+      :key="experience.workTitle+experience.employer"
+      class="milestone-section" 
+    >
+      <h3 class="section-subtitle mb-1">
+        <span class="mr-2">{{ experience.workTitle }} @ {{ experience.employer }}</span>
+        <span class="period-in-title font-weight-light">{{ experience.from }} - {{ experience.to }}</span>
+      </h3>
+      <p
+        class="section-presentation"
+        v-html="experience.presentation"
+      />
     </div>
   </div>
 </template>

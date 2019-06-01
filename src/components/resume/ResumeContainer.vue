@@ -1,43 +1,51 @@
 <template>
-  <v-layout
-    row
-    wrap
-  >
-    <v-flex
-      xs12
-      sm5
-      md4
-      lg3
-      class="teal darken-1"
+  <div>
+    <v-layout
+      row
+      wrap
     >
-      <img
-        class="portrait"
-        src="../../images/patrik-nilsson.jpg"
-        alt="Patrik Nilsson Front End developer"
+      <v-flex xs24>
+        <div class="welcome-section text-xs-center">  
+          <h1 class="name-title font-weight-thin">
+            Patrik Nilsson
+          </h1>
+          <h2 class="work-title font-weight-light">
+            Front End developer
+          </h2>
+          <resume-contact-buttons />
+        </div>
+      </v-flex>
+    </v-layout>
+    <v-layout
+      row
+      wrap
+    >
+      <v-flex
+        xs12
+        sm5
+        md4
+        lg3
+        class="teal darken-1"
       >
-      <resume-skills class="hidden-xs-only" />
-    </v-flex>
-    <v-flex
-      xs12
-      sm7
-      md8
-      lg9
-    >
-      <div class="main-section pt-3">  
-        <h1 class="name-title font-weight-thin">
-          Patrik Nilsson
-        </h1>
-        <h2 class="work-title font-weight-light mb-4">
-          Front End developer
-        </h2>
-        <resume-presentation />
-        <resume-contact-buttons />
-      </div>
-      <resume-skills class="hidden-sm-and-up" />
-      <resume-experience />
-      <resume-education />
-    </v-flex>
-  </v-layout>
+        <img
+          class="portrait"
+          src="../../images/patrik-nilsson.jpg"
+          alt="Patrik Nilsson Front End developer"
+        >
+        <resume-skills class="hidden-xs-only" />
+      </v-flex>
+      <v-flex
+        xs12
+        sm7
+        md8
+        lg9
+      >
+        <resume-skills class="hidden-sm-and-up" />
+        <resume-experience />
+        <resume-education />
+      </v-flex>
+    </v-layout>
+  </div>
 </template>
 
 <script>
@@ -50,7 +58,6 @@ import Education from './Education.vue'
 export default {
   components: {
     'resume-skills': Skills,
-    'resume-presentation': Presentation,
     'resume-contact-buttons': ContactButtons,
     'resume-experience': WorkExperience,
     'resume-education': Education
@@ -60,6 +67,17 @@ export default {
 
 
 <style lang="scss">
+  .welcome-section {
+    padding: 75px 20px;
+    @media (min-width: 680px) {
+      background-color: #F5F5F5;
+      -webkit-box-shadow: inset 0px 0px 25px 0px rgba(0,0,0,0.1);
+      -moz-box-shadow: inset 0px 0px 25px 0px rgba(0,0,0,0.1);
+      box-shadow: inset 0px 0px 25px 0px rgba(0,0,0,0.15);
+      padding: 100px;
+    }
+  }
+
   .info-column-section {
     padding: 40px;
     box-sizing: border-box;
@@ -72,11 +90,20 @@ export default {
 
   .name-title {
     font-family: 'Slabo 27px', serif;
-    font-size: 36px;
+    font-size: 40px;
     line-height: 1.4;
     color: #323c56;
     @media (min-width: 680px) {
-      font-size: 50px;
+      font-size: 62px;
+    }
+  }
+
+  .work-title {
+    font-size: 18px;
+    line-height: 1.2;
+    margin-bottom: 64px;
+    @media (min-width: 680px) {
+      font-size: 28px;
     }
   }
 

@@ -1,5 +1,5 @@
 <template>
-  <div class="main-section">
+  <div class="main-section grey lighten-4">
     <h2 class="section-title">
       Education
     </h2>

@@ -1,9 +1,9 @@
 <template>
-  <div class="teal darken-1 pa-3">
+  <div class="teal darken-1 pa-4">
     <div
       v-for="category in skills"
       :key="category.categoryName"
-      class="mt-1 mb-4"
+      class="mb-4"
     >
       <h3 class="title mb-2 white--text font-weight-light">
         {{ category.categoryName }}
