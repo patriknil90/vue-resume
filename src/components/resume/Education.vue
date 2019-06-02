@@ -52,8 +52,8 @@ export default {
           period: '2018-08',
         },
         {
-          title: 'System Science - University of Gothenburg',
-          description: 'Bachelor',
+          title: 'Bachelor in Systems Science - University of Gothenburg',
+          description: 'The program aims to give knowledge about IT and how to think about IT in regards of implementation in organizations and how it is to be used by people. My key takeaways from three years in the program is a fundamental ground in object oriented programming, modelling and the practical implementation of these models and how to broadly and deeply incorporate IT in organizations. I\'ve also made contact with lots of great people that I wouldn\'t otherwise which I\'m thankful for.',
           period: '2013-09 - 2016-06',
         },
       ]
