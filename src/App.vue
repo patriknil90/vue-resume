@@ -19,7 +19,7 @@ export default {
 <style lang="scss">
   .app-container {
     height: 100%;
-      padding: 3px;
+    padding: 3px;
     @media (min-width: 680px) {
       padding: 20px;
     }
@@ -28,7 +28,11 @@ export default {
     }
   }
 
-  .app-paper { background-color: white; }
+  .app-paper { 
+    background-color: white;
+    max-width: 2000px;
+    margin: 0 auto;
+  }
 
   .main-section { padding: 30px; }
 </style>
