@@ -43,6 +43,7 @@
         <resume-skills class="hidden-sm-and-up" />
         <resume-experience />
         <resume-education />
+        <resume-presentation />
       </v-flex>
     </v-layout>
   </div>
@@ -60,7 +61,8 @@ export default {
     'resume-skills': Skills,
     'resume-contact-buttons': ContactButtons,
     'resume-experience': WorkExperience,
-    'resume-education': Education
+    'resume-education': Education,
+    'resume-presentation': Presentation,
   }
 }
 </script>

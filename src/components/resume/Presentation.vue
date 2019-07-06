@@ -1,42 +1,10 @@
 <template>
-  <div class="personal-info grey--text text--darken-1 font-weight-light">
-    <p
-      v-for="presentationType in presentation"
-      :key="presentationType"
-      v-html="presentationType"
-    />
+  <div class="main-section">
+    <h2 class="section-title">
+      About me
+    </h2>
+    <p class="milestone-section section-presentation">
+      How fun that you've found my site and want to read about me! If I would describe myself I would say that I'm structured, organized, forward-looking and goal-oriented. I guess you could say that I always want to see a clear path ahead and that I prefer strategies over ad hoc. I have an agile approach to life which means that I believe in incrementally developing myself, processes, teams or other things to better achieve great things. I strongly believe in doing what I love to contribute as much as I can. In my career, I love to develop business applications as a Front End developer.<br><br>In my spare time I like to exercise, go to seminars and meetups, listen to podcasts and have as many extraordinary experiences as I can (be that of experiencing a new part of the world, trying out new food or meeting new exciting people).
+    </p>
   </div>
 </template>
-
-<script>
-export default {
-  data() {
-    return {
-      presentation: {
-        sitePurpose: `<span style="font-style: italic;">This site was created during a spare time project as a way for me to familiarize myself a bit 
-          more with Vue.js, WebPack, Babel and Amazon Web Services.
-          It will also serve as my personal digital resume. The source code for this site can be found 
-          <a href="https://github.com/patriknil90/vue-resume" target="_blank">here</a>.</span>`,
-        work: `I'm a structured and result-oriented Front End developer specializing in Single Page applications.
-          With an agile approach and focus on problem solving I want to contribute value to end-users and businesses without being locked in to one SPA framework.
-          In addition to my experience building Single Page Applications, I've developed web applications and websites professionally since 2014.
-          I've had the oppurtunity to experience the pros and cons of working in both small startups and global organizations.` 
-      }
-    }
-  }
-}
-</script>
-
-<style lang="scss">  
-  .personal-info {
-    font-size: 15px;
-    line-height: 1.8;
-    a {
-      text-decoration: none;
-      &:hover {
-        text-decoration: underline;
-      }
-    }
-  }
-</style>
-
