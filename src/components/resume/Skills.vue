@@ -52,11 +52,11 @@ export default {
             },
             {
               name: 'Vue.js',
-              value: 75,
+              value: 70,
             },
             {
               name: 'Angular',
-              value: 65,
+              value: 50,
             },
           ]
         },
